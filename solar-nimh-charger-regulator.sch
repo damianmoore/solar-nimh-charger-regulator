@@ -1,0 +1,331 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicad-custom-parts
+LIBS:solar-nimh-charger-regulator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR5
+U 1 1 5B017AAB
+P 7800 4000
+F 0 "#PWR5" H 7800 3750 50  0001 C CNN
+F 1 "GND" H 7800 3850 50  0000 C CNN
+F 2 "" H 7800 4000 50  0001 C CNN
+F 3 "" H 7800 4000 50  0001 C CNN
+	1    7800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L2
+U 1 1 5B017B38
+P 7650 3350
+F 0 "L2" V 7600 3350 50  0000 C CNN
+F 1 "L" V 7725 3350 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7650 3350 50  0001 C CNN
+F 3 "" H 7650 3350 50  0001 C CNN
+	1    7650 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5B017BBC
+P 7250 3800
+F 0 "C1" H 7275 3900 50  0000 L CNN
+F 1 "C" H 7275 3700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7288 3650 50  0001 C CNN
+F 3 "" H 7250 3800 50  0001 C CNN
+	1    7250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5B017C1B
+P 7250 4000
+F 0 "#PWR4" H 7250 3750 50  0001 C CNN
+F 1 "GND" H 7250 3850 50  0000 C CNN
+F 2 "" H 7250 4000 50  0001 C CNN
+F 3 "" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B017D77
+P 8950 3500
+F 0 "R1" V 9030 3500 50  0000 C CNN
+F 1 "R" V 8950 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 8880 3500 50  0001 C CNN
+F 3 "" H 8950 3500 50  0001 C CNN
+	1    8950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5B017DC4
+P 8950 3800
+F 0 "R2" V 9030 3800 50  0000 C CNN
+F 1 "R" V 8950 3800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 8880 3800 50  0001 C CNN
+F 3 "" H 8950 3800 50  0001 C CNN
+	1    8950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5B017E37
+P 8950 4000
+F 0 "#PWR6" H 8950 3750 50  0001 C CNN
+F 1 "GND" H 8950 3850 50  0000 C CNN
+F 2 "" H 8950 4000 50  0001 C CNN
+F 3 "" H 8950 4000 50  0001 C CNN
+	1    8950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5B017FB1
+P 9300 3650
+F 0 "C2" H 9325 3750 50  0000 L CNN
+F 1 "C" H 9325 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9338 3500 50  0001 C CNN
+F 3 "" H 9300 3650 50  0001 C CNN
+	1    9300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 5B01801F
+P 9300 4000
+F 0 "#PWR7" H 9300 3750 50  0001 C CNN
+F 1 "GND" H 9300 3850 50  0000 C CNN
+F 2 "" H 9300 4000 50  0001 C CNN
+F 3 "" H 9300 4000 50  0001 C CNN
+	1    9300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J1
+U 1 1 5B0272E6
+P 2100 3550
+F 0 "J1" H 2100 3850 50  0000 C CNN
+F 1 "Conn_01x05" H 1950 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 2100 3550 50  0001 C CNN
+F 3 "" H 2100 3550 50  0001 C CNN
+	1    2100 3550
+	-1   0    0    1   
+$EndComp
+Text GLabel 2300 3350 2    47   Output ~ 0
+VIN
+Text GLabel 7700 3650 0    47   Input ~ 0
+EN
+Text GLabel 6500 3550 0    47   Input ~ 0
+VBAT
+Text GLabel 2300 3550 2    47   Output ~ 0
+EN
+Text GLabel 2300 3450 2    47   Input ~ 0
+VBAT
+Text GLabel 2300 3650 2    47   Input ~ 0
+VOUT
+Text GLabel 9550 3350 2    47   Output ~ 0
+VOUT
+$Comp
+L GND #PWR1
+U 1 1 5B030EBD
+P 2400 3850
+F 0 "#PWR1" H 2400 3600 50  0001 C CNN
+F 1 "GND" H 2400 3700 50  0000 C CNN
+F 2 "" H 2400 3850 50  0001 C CNN
+F 3 "" H 2400 3850 50  0001 C CNN
+	1    2400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L1
+U 1 1 5B051D13
+P 4500 3500
+F 0 "L1" V 4450 3500 50  0000 C CNN
+F 1 "L" V 4575 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 4500 3500 50  0001 C CNN
+F 3 "" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 3200 2    47   Output ~ 0
+VBAT
+Text GLabel 3100 3850 0    47   Input ~ 0
+VIN
+$Comp
+L GND #PWR2
+U 1 1 5B051E7F
+P 3800 4400
+F 0 "#PWR2" H 3800 4150 50  0001 C CNN
+F 1 "GND" H 3800 4250 50  0000 C CNN
+F 2 "" H 3800 4400 50  0001 C CNN
+F 3 "" H 3800 4400 50  0001 C CNN
+	1    3800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L YX805 U2
+U 1 1 5B05A41D
+P 3800 3850
+F 0 "U2" H 3800 3800 47  0000 C CNN
+F 1 "YX805" H 3800 3900 47  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch1.00mm" H 3800 3850 47  0001 C CNN
+F 3 "" H 3800 3850 47  0001 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5B05A6E3
+P 4500 4400
+F 0 "#PWR3" H 4500 4150 50  0001 C CNN
+F 1 "GND" H 4500 4250 50  0000 C CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "" H 4500 4400 50  0001 C CNN
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 5B0A739B
+P 4850 3200
+F 0 "D1" H 4850 3300 50  0000 C CNN
+F 1 "D_Schottky" H 4850 3100 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 4850 3200 50  0001 C CNN
+F 3 "" H 4850 3200 50  0001 C CNN
+	1    4850 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_SPST SW1
+U 1 1 5B0A82C9
+P 5350 3200
+F 0 "SW1" H 5350 3325 50  0000 C CNN
+F 1 "SW_SPST" H 5350 3100 50  0000 C CNN
+F 2 "kicad-custom-parts:Solder_Bridge" H 5350 3200 50  0001 C CNN
+F 3 "" H 5350 3200 50  0001 C CNN
+	1    5350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPST SW2
+U 1 1 5B0A8462
+P 6800 3550
+F 0 "SW2" H 6800 3675 50  0000 C CNN
+F 1 "SW_SPST" H 6800 3450 50  0000 C CNN
+F 2 "kicad-custom-parts:Solder_Bridge" H 6800 3550 50  0001 C CNN
+F 3 "" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3850 7800 4000
+Wire Wire Line
+	7500 3350 7450 3350
+Wire Wire Line
+	7450 3350 7450 3550
+Connection ~ 7450 3550
+Connection ~ 7250 3550
+Wire Wire Line
+	7250 3950 7250 4000
+Wire Wire Line
+	8800 3550 8800 3650
+Wire Wire Line
+	8800 3650 8950 3650
+Wire Wire Line
+	8950 3950 8950 4000
+Connection ~ 8950 3350
+Wire Wire Line
+	9300 3800 9300 4000
+Connection ~ 9300 3350
+Wire Wire Line
+	7000 3550 7800 3550
+Wire Wire Line
+	8800 3350 9550 3350
+Wire Wire Line
+	7800 3650 7700 3650
+Wire Wire Line
+	9300 3350 9300 3500
+Wire Wire Line
+	7250 3550 7250 3650
+Wire Wire Line
+	2300 3750 2400 3750
+Wire Wire Line
+	2400 3750 2400 3850
+Wire Wire Line
+	3250 3850 3100 3850
+Wire Wire Line
+	3800 3300 3800 3200
+Wire Wire Line
+	4500 3350 4500 3200
+Connection ~ 4500 3200
+Wire Wire Line
+	4350 3850 4500 3850
+Wire Wire Line
+	4500 3650 4500 4400
+Connection ~ 4500 3850
+Wire Wire Line
+	3800 3200 4700 3200
+Wire Wire Line
+	5000 3200 5150 3200
+Wire Wire Line
+	5550 3200 5700 3200
+Wire Wire Line
+	6500 3550 6600 3550
+$Comp
+L TPS61070 U1
+U 1 1 5B0DAF35
+P 8300 3600
+F 0 "U1" H 8300 3600 60  0000 C CNN
+F 1 "TPS61070" H 8300 4100 60  0000 C CNN
+F 2 "kicad-custom-parts:SOT-23-6" H 8300 3600 60  0001 C CNN
+F 3 "" H 8300 3600 60  0001 C CNN
+	1    8300 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
